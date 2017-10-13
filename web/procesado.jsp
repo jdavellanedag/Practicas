@@ -12,8 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
+
         <%
-            String number = request.getParameter("numero");
+            String number = request.getAttribute("numero").toString();
 
             for (int i = 0; i < Integer.parseInt(number); i++) {
         %>                    
